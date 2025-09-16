@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+/* shorthand background 
+  color > image > position > repeat > [size] >attachement
+  size precisa ser marcado separadamente
+*/
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body{
+  background-color: azure;
+  min-height: 100vh;
+}
+
+header{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+header > h1{
+  padding-top: 30px;
+  font-variant: small-caps;
+  font-size: 7vw;
+}
+
+header > p{
+  padding-bottom: 30px;
+}
+
+
+section{
+ padding-top: 10vh;
+ padding-bottom: 10vh;
+ line-height: 2em;
+ padding-left: 20px;
+ font-size: 2vw;
+}
+
+section > p {
+  padding-bottom: 1em;
+}
+
+
+section.normal{
+  background-color: burlywood;
+  color: black;
+}
+
+
+section.normal > p{
+  
+  width: 30%;
+  
+}
+
+
+section.imagem{
+  background-color: cadetblue;
+  color: white;
+  
+  
+}
+
+section.imagem > p {
+  display: inline-block;
+  background-color: rgba(56, 94, 95, 0.705);
+  padding: 10px;
+  
+}
+
+
+section#img01{
+ background: url("imagens/wallpaper002.jpg") center no-repeat fixed  ;
+ background-size: cover;
+}
+
+
+section#img02{
+ background: url("imagens/wallpaper005.jpg")  center no-repeat fixed         ;
+ background-size: cover;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 40px;
+  padding-top: 20px;
+}

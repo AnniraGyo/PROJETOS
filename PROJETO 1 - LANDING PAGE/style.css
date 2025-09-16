@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:"fonte-chique";
+    src: url("Seraphine\ DEMO\ VERSION.ttf") format("truetype") ;
+}
+
+@font-face {
+  font-family:"fontechique2";
+  src: url("BravenRegular.ttf") format("truetype");
+}
+
+:root {
+--cor-1: rgb(230, 187, 243);
+--cor-2: #eae2ee;
+--cor-3: rgb(0, 0, 0);
+--cor-4: #8b5fa3;
+--cor-5: rgba(224, 154, 241, 0.726); 
+--cor-6: #41085f;
+ }
+
+body{
+  background-color: var(--cor-2);
+  text-align: center;
+  margin: 0px;
+}
+
+header{
+font-size: 40px;
+font-family:"fontechique2";
+color: var(--cor-3);
+margin: 00px;
+padding: 10px;
+text-align: center;
+border-top: 5px solid var(--cor-1);
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background-color: var(--cor-4);
+  text-align: center;
+  margin: 0px;
+  padding: -7px;
+  width: auto
+}
+
+nav > a {
+    font-family: "fonte-chique";
+    color: var(--cor-1);
+    text-decoration: none; 
+    margin: 25px;
+    padding: 5px;   
+}
+
+nav > a:hover{
+  text-decoration: none;
+  color: var(--cor-6);
+  background-color:var(--cor-5);
+  border-radius: 20px;  
+  transition-duration: 0.5s;
+}
+
+main{
+font-family:"fonte-chique";
+color: var(--cor-3);
+
+}
+
+.texto{
+    font-family: "fontechique2";
+    font-size: 20px;
+}
+
+ article{
+  height: 230px;
+  margin: 10px;
+  padding: 6px;
+  text-align: justify;
+  font-size: 100%;
+  max-width: 500px;
+}
+
+.titulo {
+  font-size: 50px;
+  
+}
+
+
+div > p{
+  padding: 6px;
+  text-align: justify;
+}    
+
+.conteudo{
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+
+
+
+.layout{
+    width: min(700px, 100%);
+    margin: 23px 10px;
+    columns: 3  ;
+    column-gap: 1em;
+    
+}
+
+img{
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 10%;
+   
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.layout{
+    width: min(1000px, 100%);
+    margin: 23px auto;
+    columns: 3 ;
+    column-gap: 1em;
+    
+}
+
+
+img{
+   
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 10%;
+   
+}
+
+header{
+font-size: 40px;
+margin: -8px;
+padding: 10px;
+text-align: center;
+width: 100%;
+}
+

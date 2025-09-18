@@ -6,30 +6,72 @@
   size precisa ser marcado separadamente
 */
 
+
+
+@font-face {
+    font-family:"fonte-chique";
+    src: url("Seraphine\ DEMO\ VERSION.ttf") format("truetype") ;
+}
+
+@font-face {
+  font-family:"fontechique2";
+  src: url("BravenRegular.ttf") format("truetype");
+}
+
+:root {
+--cor-1: rgb(230, 187, 243);
+--cor-2: #eae2ee;
+--cor-3: rgb(0, 0, 0);
+--cor-4: #8b5fa3;
+--cor-5: rgba(224, 154, 241, 0.726); 
+--cor-6: #41085f;
+
+}
+
 *{
   padding: 0px;
   margin: 0px;
 }
 
 html, body{
-  background-color: azure;
+  background-color: var(--cor-2);
   min-height: 100vh;
 }
 
-header{
-  background-color: black;
-  color: white;
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cor-4);
   text-align: center;
+  margin: 0px;
+  padding: -7px;
+  width: auto
 }
 
-header > h1{
-  padding-top: 30px;
-  font-variant: small-caps;
-  font-size: 7vw;
+nav > a {
+    font-family: "fonte-chique";
+    color: var(--cor-1);
+    text-decoration: none; 
+    margin: 25px;
+    padding: 10px;   
 }
 
-header > p{
-  padding-bottom: 30px;
+nav > a:hover{
+  text-decoration: none;
+  color: var(--cor-6);
+  background-color:var(--cor-5);
+  border-radius: 15px;  
+  transition-duration: 0.2s;
+  padding: 10px;
+}
+
+.site{
+  font-family: "fontechique2";
+  font-size: 30px;
+  color: var(--cor-1);
+  margin: 25px;
+  padding: 10px; 
 }
 
 
@@ -38,56 +80,50 @@ section{
  padding-bottom: 10vh;
  line-height: 2em;
  padding-left: 20px;
- font-size: 2vw;
+ font-size: 1vw;
 }
 
 section > p {
   padding-bottom: 1em;
+  padding: 20px;
+  font-family: "fontechique2";
 }
 
 
 section.normal{
-  background-color: burlywood;
-  color: black;
+  background-color: var(--cor-1);
+  color: var(--cor-3);
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+section > img{
+  border-radius: 20px;
+  padding: 10px;
+  height: 500px;
+  
 }
 
 
-section.normal > p{
+section.normal2 > p{
   
   width: 30%;
   
 }
 
-
-section.imagem{
-  background-color: cadetblue;
-  color: white;
-  
-  
-}
-
-section.imagem > p {
+section.normal2  {
   display: inline-block;
-  background-color: rgba(56, 94, 95, 0.705);
+  height: 800px;
   padding: 10px;
   
 }
 
 
-section#img01{
- background: url("imagens/wallpaper002.jpg") center no-repeat fixed  ;
- background-size: cover;
-}
-
-
-section#img02{
- background: url("imagens/wallpaper005.jpg")  center no-repeat fixed         ;
- background-size: cover;
-}
-
 footer{
-  background-color: black;
-  color: white;
+  background-color: var(--cor-6);
+  color: var(--cor-4);
   text-align: center;
   height: 40px;
   padding-top: 20px;

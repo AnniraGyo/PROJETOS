@@ -14,9 +14,11 @@
 --cor-1: rgb(230, 187, 243);
 --cor-2: #eae2ee;
 --cor-3: rgb(0, 0, 0);
---cor-4: #8b5fa3;
+--cor-4: #ca6eb3;
 --cor-5: rgba(224, 154, 241, 0.726); 
 --cor-6: #41085f;
+--cor-7: #eb89cd;
+--cor-8: #96c989e7; 
  }
 
 body{
@@ -38,7 +40,7 @@ border-top: 5px solid var(--cor-1);
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   background-color: var(--cor-4);
   text-align: center;
   margin: 0px;
@@ -57,9 +59,17 @@ nav > a {
 nav > a:hover{
   text-decoration: none;
   color: var(--cor-6);
-  background-color:var(--cor-5);
-  border-radius: 20px;  
-  transition-duration: 0.5s;
+  background-color:var(--cor-1);
+  border-radius: 15px;  
+  transition-duration: 0.2s;
+  padding: 10px;
+}
+
+.site{
+  font-family: "fontechique2";
+  font-size: 30px;
+  color: var(--cor-1);
+
 }
 
 main{
@@ -83,7 +93,7 @@ color: var(--cor-3);
 }
 
 .titulo {
-  font-size: 50px;
+  font-size: 80px;
   
 }
 
@@ -98,6 +108,7 @@ div > p{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  flex-direction:row-reverse;
 }
 
 
@@ -109,6 +120,7 @@ div > p{
     columns: 3  ;
     column-gap: 1em;
     
+    
 }
 
 img{
@@ -116,5 +128,37 @@ img{
     margin-bottom: 1em;
     width: 100%;
     border-radius: 10%;
-   
+    border: 5px solid var(--cor-8);
 }
+
+
+.conteudo2{
+  background-color: var(--cor-7);
+  display: flex;
+  justify-content: space-around;
+  height: 800px;
+  
+  
+  
+}
+
+
+.texto2{
+    font-family: "fontechique2";
+    font-size:25px;
+    padding-bottom: 8em;
+    padding: 170px;
+    margin-top: 0px;
+    
+     
+}    
+ 
+mark{
+  background-color: var(--cor-8);
+  padding: 3.5px;
+  border-radius: 10px;
+  color: var(--cor-2);
+  
+
+}
+
